@@ -43,6 +43,7 @@ do {
     if (finalizacao === "Y" || finalizacao === "y") { //Se o usuário optou por finalizar a aplicação, termina o loop
         break;
     }
+    
     do {
         endereco = (parseFloat(promptSync(`Digite o endereço de entrega do ${i + 1}º cliente: `)));
         if (!isNaN(endereco) || endereco === '') { //Se o endereço é um número ou é vazio
